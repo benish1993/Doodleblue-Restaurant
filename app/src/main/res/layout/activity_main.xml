@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cover_img" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCover"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inka Restaurant"
+                android:fontFamily="@font/google_sans_bold"
+                android:textColor="@color/theme_color"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0(200+) | All days : 09:00 AM - 06:00 PM"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_baseline_star_outline_24"
+                android:drawablePadding="5dp"
+                android:textColor="@color/grey"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reach us at : 9854562142"
+                android:drawableStart="@drawable/ic_outline_phone_24"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/google_sans_medium"
+                android:textColor="@color/grey"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOK A TABLE"
+                android:fontFamily="@font/google_sans_medium"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cv"
+        android:layout_above="@id/rlViewCart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starter"
+                android:fontFamily="@font/google_sans_medium"
+                android:textColor="@color/theme_color"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ll"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guac de la Costa"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tortillas de mais, fruit de la passion"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="€ 7"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/yellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rectangle_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 1 "
+                        android:textSize="15sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ll1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chicharron y Cerveza"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="citron vert / Corona sauce"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="€ 7"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/yellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rectangle_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 1 "
+                        android:textSize="15sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ll2"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chilitos con"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="padrones tempura gambas"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="€ 7"
+                        android:padding="5dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/yellow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rectangle_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 1 "
+                        android:textSize="15sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW CART (5 ITEMS)"
+            android:fontFamily="@font/google_sans_medium"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_outline_shopping_cart_24"
+            android:drawablePadding="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
