@@ -11,14 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitXY"
-        android:src="@drawable/cover_img" />
+        android:src="@drawable/cover_img"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivCover"
-        android:layout_marginTop="-60dp"
+        android:layout_marginTop="-70dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
@@ -102,13 +102,14 @@
                 android:textSize="18sp" />
 
             <RelativeLayout
+                android:id="@+id/rl1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/ll"
+                    android:layout_toLeftOf="@+id/ll1"
                     android:layout_marginLeft="10dp"
                     android:orientation="vertical">
 
@@ -141,15 +142,17 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll"
+                    android:id="@+id/ll1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="invisible"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/rectangle_bg"
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tvDec1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="-"
@@ -159,14 +162,16 @@
                         android:paddingRight="10dp"/>
 
                     <TextView
+                        android:id="@+id/tvCount1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" 1 "
+                        android:text="0"
                         android:textSize="15sp"
                         android:fontFamily="@font/google_sans_bold"
                         android:padding="5dp" />
 
                     <TextView
+                        android:id="@+id/tvInc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+"
@@ -174,18 +179,29 @@
                         android:fontFamily="@font/google_sans_bold"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp" />
-
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAdd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:background="@drawable/button_bg"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"/>
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/rl2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/ll1"
+                    android:layout_toLeftOf="@+id/ll2"
                     android:layout_marginLeft="10dp"
                     android:orientation="vertical">
 
@@ -218,15 +234,17 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll1"
+                    android:id="@+id/ll2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="invisible"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/rectangle_bg"
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tvDec2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="-"
@@ -236,14 +254,16 @@
                         android:paddingRight="10dp"/>
 
                     <TextView
+                        android:id="@+id/tvCount2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" 1 "
+                        android:text="0"
                         android:textSize="15sp"
                         android:fontFamily="@font/google_sans_bold"
                         android:padding="5dp" />
 
                     <TextView
+                        android:id="@+id/tvInc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+"
@@ -253,16 +273,28 @@
                         android:paddingRight="10dp" />
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAdd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:background="@drawable/button_bg"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"/>
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/rl3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/ll2"
+                    android:layout_toLeftOf="@+id/ll3"
                     android:layout_marginLeft="10dp"
                     android:orientation="vertical">
 
@@ -295,15 +327,17 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll2"
+                    android:id="@+id/ll3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="invisible"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/rectangle_bg"
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tvDec3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="-"
@@ -313,14 +347,16 @@
                         android:paddingRight="10dp"/>
 
                     <TextView
+                        android:id="@+id/tvCount3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" 1 "
+                        android:text="0"
                         android:textSize="15sp"
                         android:fontFamily="@font/google_sans_bold"
                         android:padding="5dp" />
 
                     <TextView
+                        android:id="@+id/tvInc3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+"
@@ -330,6 +366,17 @@
                         android:paddingRight="10dp" />
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAdd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:background="@drawable/button_bg"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"/>
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
@@ -342,9 +389,10 @@
         android:background="@color/theme_color">
 
         <TextView
+            android:id="@+id/tvViewCart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="VIEW CART (5 ITEMS)"
+            android:text="VIEW CART (0 ITEMS)"
             android:fontFamily="@font/google_sans_medium"
             android:textSize="16sp"
             android:padding="10dp"
