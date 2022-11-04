@@ -193,6 +193,21 @@ class MainActivity : Activity() {
                 tvCount3.text = data?.getStringExtra("count3")
                 val total = tvCount1.text.toString().toInt()+tvCount2.text.toString().toInt()+tvCount3.text.toString().toInt()
                 tvViewCart.text = "VIEW CART (" + total + " ITEMS)"
+                if (tvCount1.text.equals("0"))
+                {
+                    btnAdd1.visibility = View.VISIBLE;
+                    ll1.visibility = View.INVISIBLE;
+                }
+                if (tvCount2.text.equals("0"))
+                {
+                    btnAdd2.visibility = View.VISIBLE;
+                    ll2.visibility = View.INVISIBLE;
+                }
+                if (tvCount3.text.equals("0"))
+                {
+                    btnAdd3.visibility = View.VISIBLE;
+                    ll3.visibility = View.INVISIBLE;
+                }
             }
         }
     }
